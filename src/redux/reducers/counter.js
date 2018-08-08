@@ -1,5 +1,5 @@
 // reducer 是纯函数
-import {INCREMENT , DECREMENT , RESET}  from '../action/counter';
+import {INCREMENT , DECREMENT , RESET}  from '../action/counterAction';
 
 /**
  * 初始化state
