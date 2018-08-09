@@ -1,10 +1,10 @@
 export const ADD_TO_LIST = 'ADD_TO_LIST';
 export const RESET_TODO_LIST = 'RESET_TODO_LIST';
 
-export function addTodoList() {
+export function addTodoList(text) {
   return {
     type: ADD_TO_LIST,
-    text:'new text'
+    text: text
   };
 }
 

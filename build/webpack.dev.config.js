@@ -4,7 +4,7 @@ const commonConfig = require('./webpack.common.config');
 const webpack = require('webpack');
 const devConfig = {
   // ？
-  devtool: 'inline-source-map',
+  devtool: 'cheap-eval-source-map',
 
   entry:{
     app:[
@@ -32,7 +32,7 @@ const devConfig = {
     historyApiFallback : true,
     host: '0.0.0.0',
     hot : true,
-    port:8000
+    port:8080
   },
 
   plugins:[
