@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-build": "webpack --config webpack.dev.config.js --color --progress",
-    "start": "webpack-dev-server --config webpack.dev.config.js --color --progress",
-    "build": "webpack --config webpack.config.js --progress --color"
+    "start": "webpack-dev-server --config ./build/webpack.dev.config.js --color --progress",
+    "build": "webpack --config ./build/webpack.build.config.js --color --progress"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +33,7 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "style-loader": "^0.22.0",
-    "url-loader": "^1.0.1"
+    "url-loader": "^1.0.1",
+    "webpack-merge": "^4.1.4"
   }
 }
