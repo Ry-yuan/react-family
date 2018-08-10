@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Layout, Menu } from 'antd';
 const { Header, Content } = Layout;
-import { Link , Route} from 'react-router-dom';
+import { Link , Route ,Switch} from 'react-router-dom';
 import Home from './Home/Home';
+import UserInfo from './UserInfo/UserInfo.js'
 
 export default class App extends Component {
   state = {
@@ -43,7 +44,10 @@ export default class App extends Component {
         <Layout>
           <Layout style={{ padding: '0 24px 24px' }}>
             <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 480 }}>
-              <Route path="/home" component={Home} />
+              <Switch>
+                <Route path="/home" component={Home} />
+                <Route path="/about" component={UserInfo} />
+              </Switch>
             </Content>
           </Layout>
         </Layout>
