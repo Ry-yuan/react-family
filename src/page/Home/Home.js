@@ -69,6 +69,6 @@ const mapStateToProps = (state)=>{
   return{
     todolist:state.todolist
   }
-}
+}   
 
 export default connect(mapStateToProps)(Home);
